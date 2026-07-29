@@ -1,3 +1,66 @@
-# neural-ode-biomass-modeling
-This project explores the use of **Neural Ordinary Differential Equations (Neural ODEs)** for modeling biological dynamical systems.  The main goal is to evaluate the ability of Neural ODEs to learn **metabolic dynamics from experimental data**, using the `jax` library.
+```markdown
+# Neural ODE Biomass Modeling
 
+This project explores the use of **Neural Ordinary Differential Equations (Neural ODEs)** for modeling biological dynamical systems.
+
+The main goal is to evaluate the ability of Neural ODEs to learn **metabolic dynamics from experimental data** using the `jax` library.
+
+## Project status
+
+This section summarizes what has been completed, what has not yet been completed, and what is currently in progress.
+
+## What has been done
+
+- Training using **Run1 only**. The results obtained with Run1 were unsatisfactory.
+- Training using **Run2 only**, since Run1 did not produce satisfactory results.
+- Exclusion of bioreactors **13** and **19**, as they exhibited abnormal biomass profiles that were not consistent with the expected biological behavior. These bioreactors were therefore considered experimental artifacts or failed experiments.
+- Leave-one-bioreactor-out cross-validation performed on **Run2**:
+  - one bioreactor is excluded from the training set;
+  - the model is trained on the remaining bioreactors;
+  - the excluded bioreactor is then used as the test bioreactor.
+- Data normalization is performed using **training data statistics only** to prevent data leakage from the test bioreactor.
+
+### Cross-validation results
+
+<!-- Insert the results table here -->
+
+| Test bioreactor | Glucose R² | DO R² | pH R² | Biomass R² |
+|-----------------|------------|-------|-------|------------|
+|                 |            |       |       |            |
+
+## What has not yet been done
+
+- Training on **Run1 and Run2 simultaneously**.
+- Full implementation of the alternative extrapolation benchmark designed to answer the following question:
+
+> How much training data is required to learn dynamics that generalize to unseen bioreactors?
+
+Some preliminary experiments have already been performed, but the results were not particularly promising.
+
+Since the main extrapolation pipeline is still being implemented, this alternative benchmark has not been investigated further for the moment.
+
+## Work in progress
+
+A new extrapolation benchmark is currently being implemented.
+
+The model is trained normally on the training bioreactors. One bioreactor is completely excluded from training and used as the test bioreactor.
+
+For the test bioreactor:
+
+1. The trajectory is observed only up to a selected cutoff time.
+2. The measured state at the cutoff time is used as the initial condition of the Neural ODE.
+3. The model is integrated forward from this state.
+4. The predicted trajectory is compared with the remaining experimental trajectory.
+
+This benchmark evaluates the ability of the model to forecast the future evolution of an unseen bioreactor from a partially observed trajectory.
+
+This differs from the previous experiment, which evaluated how much training data was required to learn dynamics that generalize to unseen bioreactors.
+
+The implementation and validation of this extrapolation pipeline are currently in progress.
+
+### Recent extrapolation results
+
+<!-- Insert figures, tables, or result summaries here -->
+
+![Recent extrapolation results](path/to/extrapolation_results.png)
+```
