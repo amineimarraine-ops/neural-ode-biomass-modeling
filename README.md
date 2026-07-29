@@ -21,11 +21,7 @@ This section summarizes what has been completed, what has not yet been completed
 
 ### Cross-Validation Results
 
-<!-- Add or replace the values in the table below. -->
-
-| Test bioreactor | Glucose R² | DO R² | pH R² | Biomass R² |
-|:---------------:|:----------:|:-----:|:-----:|:----------:|
-|                 |            |       |       |            |
+![Image description](results.png)
 
 ## What Has Not Yet Been Done
 
