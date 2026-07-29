@@ -32,7 +32,7 @@ This section summarizes what has been completed, what has not yet been completed
 
 Some preliminary experiments have already been performed, but the results were not particularly promising.
 
-Since the main extrapolation pipeline is still being implemented, this alternative benchmark has not been investigated further at this stage.
+Since the main extrapolation pipeline is still being implemented, this alternative benchmark has not been investigated further at this stage. Besides, this strategy does not answer the question that was raised in the first place.
 
 ## Work in Progress
 
