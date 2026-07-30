@@ -56,5 +56,6 @@ The implementation and validation of this extrapolation pipeline are currently i
 ### Recent Extrapolation Results
 
 <!-- Insert figures, tables, or result summaries below. -->
+![Recent extrapolation results](loss_23.png)
+![There you go](results_23.png)
 
-![Recent extrapolation results](images/extrapolation_results.png)
