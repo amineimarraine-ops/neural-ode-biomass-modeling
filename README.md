@@ -59,5 +59,8 @@ The implementation and validation of this extrapolation pipeline are currently i
 
 <!-- Insert figures, tables, or result summaries below. -->
 ![Recent extrapolation results](loss_23.png)
+The learning process has been done on all bioreactors except the number 23, and on all the data points.
+
 ![There you go](results_23.png)
+Here, we gave a specific initial condition (blue horizontal dashed line) as an input of the integration process, as it is the beginning of the estimation of the trajectory by the NeuralODE.
 
