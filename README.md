@@ -23,6 +23,8 @@ This section summarizes what has been completed, what has not yet been completed
 
 ![Image description](results.png)
 
+As for the dFBA paper, all negative scores need to be considered as 0, but this has not be done yet.
+
 ## What Has Not Yet Been Done
 
 - Training on **Run1 and Run2 simultaneously**.
