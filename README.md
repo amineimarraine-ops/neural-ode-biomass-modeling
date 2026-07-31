@@ -10,10 +10,10 @@ This section summarizes what has been completed, what has not yet been completed
 
 ## What Has Been Done
 
-- Training using **Run1 only**. The results obtained with Run1 were unsatisfactory.
-- Training using **Run2 only**, since Run1 did not produce satisfactory results.
+- Training using **Run2 only**. The results obtained with Run1 were unsatisfactory.
+- Training using **Run1 only**, since Run1 did not produce satisfactory results.
 - Exclusion of bioreactors **13** and **19**, as they exhibited abnormal biomass profiles that were inconsistent with the expected biological behavior. These bioreactors were therefore considered experimental artifacts or failed experiments.
-- Leave-one-bioreactor-out cross-validation performed on **Run2**:
+- Leave-one-bioreactor-out cross-validation performed on **Run1**:
   - One bioreactor is excluded from the training set.
   - The model is trained on the remaining bioreactors.
   - The excluded bioreactor is then used as the test bioreactor.
