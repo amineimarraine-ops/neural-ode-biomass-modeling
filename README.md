@@ -7,6 +7,8 @@ The main goal is to evaluate the ability of Neural ODEs to learn **metabolic dyn
 ## Project Status
 
 This section summarizes what has been completed, what has not yet been completed, and what is currently in progress.
+Here is a diagram explaining the structure of the Neural ODE :
+![Recent extrapolation results](NeuralODE_Architecture.png)
 
 ## What Has Been Done
 
