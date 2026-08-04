@@ -8,7 +8,7 @@ The main goal is to evaluate the ability of Neural ODEs to learn **metabolic dyn
 
 This section summarizes what has been completed, what has not yet been completed, and what is currently in progress.
 Here is a diagram explaining the structure of the Neural ODE :
-![Recent extrapolation results](NeuralODE_Architecture.png)
+![Recent extrapolation results](figures/NeuralODE_Architecture.png)
 
 ## What Has Been Done
 
@@ -23,7 +23,7 @@ Here is a diagram explaining the structure of the Neural ODE :
 
 ### Cross-Validation Results
 
-![Image description](results.png)
+![Image description](figures/results.png)
 
 As for the dFBA paper, all negative scores need to be considered as 0, but this has not be done yet.
 
@@ -60,9 +60,9 @@ The implementation and validation of this extrapolation pipeline are currently i
 ### Recent Extrapolation Results
 
 <!-- Insert figures, tables, or result summaries below. -->
-![Recent extrapolation results](loss_23.png)
+![Recent extrapolation results](figures/loss_23.png)
 The learning process has been done on all bioreactors except the number 23, and on all the data points.
 
-![There you go](results_23.png)
+![There you go](figures/results_23.png)
 Here, we gave a specific initial condition (blue horizontal dashed line) as an input of the integration process, as it is the beginning of the estimation of the trajectory by the NeuralODE.
 
